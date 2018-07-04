@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audience - Nocmt</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css?v=0.1">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main-left">
+            <div class="imusic">
+                <!-- 头部 -->
+                <div class="imusic-top">
+                    <img id="top-cover" class="top-cover" src="img/default.jpeg" alt="">
+                </div>
+                <!-- 底部 -->
+                <div class="imusic-bottom">
+                    <!-- 隐藏播放器 -->
+                    <audio id="iaudio" src="" controls="controls" hidden="true">
+                    </audio>
+                    <!-- 下载按钮 -->
+                    <div class="download">
+                        <a id="btn-download" href="" download="" title="请右键另存为" target="view_window">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <!-- 进度条 -->
+                    <div class="progress-bar">
+                        <div id="imusic-bar" class="bar"></div>
+                    </div>
+                    <!-- 按钮组 -->
+                    <div class="button-group">
+                        <span id="btn-backward" class="btn-backward">
+                            <i class="fas fa-backward"></i>
+                        </span>
+                        <!-- 默认 -->
+                        <span id="btn-play" class="btn-play" style="margin: 0 34px">
+                            <i class="fas fa-play"></i>
+                        </span>
+                        <!-- 播放 -->
+                        <span id="btn-pause" class="btn-pause" style="margin: 0 34px">
+                            <i class="fas fa-pause"></i>
+                        </span>
+                        <!-- 暂停 -->
+                        <span id="btn-stop" class="btn-stop" style="margin: 0 34px">
+                            <i class="fas fa-stop"></i>
+                        </span>
+                        <span id="btn-forward" class="btn-forward">
+                            <i class="fas fa-forward"></i>
+                        </span>
+                    </div>
+                    <!-- 信息 -->
+                    <div class="inf">
+                        <!-- <p>07.18 PM / March 02</p> -->
+                        <p id="inf">Music Name - Author</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="te-two">
+                <a href="https://unsplash.com/" title="壁纸资源" target="view_window">
+                    <img src="img/1.jpg" alt="">
+                </a>
+            </div>
+            <div class="te-three">
+                <h2 onclick="window.open(url='https://www.jianshu.com/u/6b91cce262ba');">Document</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/music.js?v=0.3"></script>
+    <script src="js/getdata.js?v=0.3"></script>
+</body>
+
+</html>
