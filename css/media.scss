@@ -1,0 +1,42 @@
+@media (max-width: 800px) {
+    body {
+        .main {
+            max-width: 80%;
+            .main-left {
+                display: none;
+            }
+            .main-right {
+                width: 100%;
+                height: auto;
+                .te-three{
+                    h2{
+                        height: 160px;
+                        line-height: 160px;
+                    }
+                }
+                .te-two {
+                    height: auto;
+                    overflow: unset;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        .main {
+            max-width: 90%;
+            margin: 50px auto;
+            .main-right {
+                .te-three {
+                    h2 {
+                        font-size: 1.8rem;
+                        height: 130px;
+                        line-height: 130px;
+                    }
+                }
+            }
+        }
+    }
+}
