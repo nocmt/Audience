@@ -133,6 +133,6 @@ function Music(json_data) {
     console.log("切换完成！当前音乐：" + music.sign);
   };
   iaudio.onerror = function () {
-    console.log("该音乐版权限制，无法播放，将会自动切换下一首！");
+    console.log("该音乐可能由于网络波动或者版权限制导致播放失败了，已自动跳至下一首！");
     music.next();
   };
