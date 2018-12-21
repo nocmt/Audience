@@ -20,6 +20,9 @@
                 }
             }
         }
+        .mini-imusic{
+            display: block;
+        }
     }
 }
 
@@ -27,7 +30,7 @@
     body {
         .main {
             max-width: 90%;
-            margin: 50px auto;
+            margin-top: 50px;
             .main-right {
                 .te-three {
                     h2 {
