@@ -1,9 +1,12 @@
+var iaudio = document.getElementById("iaudio");
+var mis = 0;
 function Music(json_data) {
     this.json_data = json_data; // 数据
     this.sign = 1; //标记
     this.playsign = true;
     this.jsonLength = getJsonLength(json_data);
   }
+  
 
   function getJsonLength(json_data) {
     let jsonLength = 0;
@@ -52,8 +55,6 @@ function Music(json_data) {
       "href": iurl,
       "download": ititle
     });
-
-    var iaudio = document.getElementById("iaudio");
     iaudio.play();
     TimeSpan();
     console.log("正在播放");
@@ -136,3 +137,19 @@ function Music(json_data) {
     console.log("该音乐可能由于网络波动或者版权限制导致播放失败了，已自动跳至下一首！");
     music.next();
   };
+
+  $('.mini-imusic').on('click', function(){
+    if(mis===0){
+      music.play();
+      mis = 1;
+    }
+    //关闭
+    else if (mis===1){
+      music.stop();
+      mis = 2;
+    }
+    else{
+      music.keep();
+      mis = 1;
+    }
+  });
